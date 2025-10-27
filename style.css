@@ -1,0 +1,163 @@
+body {
+    background-image: url(https://www.techexplorist.com/wp-content/uploads/2022/05/moon-surface.jpg);
+    background-size: 1600px 800px;
+    background-repeat: no-repeat;
+    
+}
+.rocket{
+    transform: rotate(90deg) translateX(0);
+    width :200px;
+    height:200px;
+    position:absolute;
+    left:0;
+    margin-top: 400px;
+    animation-name: rocket;
+    animation-duration: 10s;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    z-index:1;
+    
+
+}
+.rocket2{
+    transform: rotate(90deg) translateX(0);
+    width :200px;
+    height:200px;
+    position:absolute;
+    left:0;
+    margin-top :300px;
+    animation-name: rocket2;
+    animation-duration: 10s;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    z-index:1;
+    
+   
+    
+}
+
+@keyframes rocket{
+    0%{ transform: translateX(0px) rotate(90deg);
+    }
+    100%{ transform: translateX(1400px) rotate(90deg);}
+}
+
+@keyframes rocket2{
+    0% { transform: translateX(0px) rotate(90deg);
+    }
+    90%{ transform: translateX(1000px) rotate(90deg);
+        opacity:1}
+    100%{ transform: translateX(1000px) rotate(90deg) ;
+         opacity:0}
+    
+}
+
+.star{
+    width:50px;
+    position:absolute;
+    right:0;
+    animation-name:star;
+    animation-iteration-count: infinite;
+    animation-duration:10s;
+    animation-timing-function: ease-in-out;
+    
+
+}   
+.star2{
+    width:50px;
+    position:absolute;
+    right:70px;
+    top:80px;
+    animation-name:star;
+    animation-iteration-count: infinite;
+    animation-duration:10s;
+    animation-timing-function: ease-out;
+    
+}  
+@keyframes star{
+    from{transform: translateX(140px);}
+    to {transform: translateX(-1550px);}
+}
+
+.finish{
+    width :500px;
+    position:absolute;
+    right:-140px;
+    bottom:30px;
+    transform: rotateY(60deg);
+
+}
+
+.ready{
+    width:38px;
+    height:40px;
+    background-color:rgb(121, 4, 4);
+    border-radius: 50%;
+    animation-name: ready;
+    animation-duration: 2s;
+    position:absolute;
+    top:204px;
+    left:55px;
+    z-index:1
+    
+
+
+}
+@keyframes ready{
+    from{background-color:rgb(121, 4, 4);}
+    to{background-color:red ;}
+}
+.set{
+    width:38px;
+    height:40px;
+    background-color:rgb(81, 81, 7);
+    border-radius: 50%;
+    animation-name: set;
+    animation-duration: 2s;
+    animation-delay:2s;
+    position:absolute;
+    top:255px;
+    left:55px;
+    z-index:1;
+    
+}
+@keyframes set{
+    from{background-color:rgb(81, 81, 7);}
+    to{background-color:yellow;}
+}
+.go{
+    width:38px;
+    height:40px;
+    background-color:rgb(8, 99, 8);
+    border-radius: 50%;
+    animation-name: go;
+    animation-duration: 2s;
+    animation-delay:4s;
+    position:absolute;
+    top:304px;
+    left:55px;
+    z-index:1
+    
+}
+@keyframes go{
+    from{background-color:rgb(8, 99, 8);}
+    to{background-color:rgb(6, 216, 6);}
+}
+
+.black{
+    width:130px;
+    height:170px;
+    
+    position :absolute;
+    top:190px;
+}
+.bar{
+    width:15px;
+    height:300px;
+    background-color: rgba(46, 41, 41, 0.986);
+    position:absolute;
+    left:67px;
+    bottom:68px
+}
